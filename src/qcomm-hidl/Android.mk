@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+ifneq ($(QCPATH),)
 include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := -g -c -W -Wall -O2
@@ -73,3 +73,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libantradio
 
 include $(BUILD_SHARED_LIBRARY)
+#endif
